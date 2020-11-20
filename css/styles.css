@@ -3,9 +3,18 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body,html{
+	overflow-x: hidden;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+
+}
 
 h1{
 	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+
 }
 
 /*Navbar Styles*/
@@ -43,25 +52,24 @@ header{
 }
 
 nav{
-
-	/*padding-top: 5rem;*/
+	font-weight: 500;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	text-transform: uppercase;
-	font-size: 1.6rem;
+	font-size: 1rem;
 }
 
-.brand{
+/*.brand{
 	font-size: 3rem;
 	font-weight: 300;
 	transform: translateX(-100rem);
 	animation: slideIn .5s forwards;
 }
-
-.brand span{
+*/
+/*.brand span{
 	color: crimson;
-}
+}*/
 
 nav ul{
 	display: flex;
@@ -182,10 +190,10 @@ nav ul li a:hover::after{
 		font-size: 2.5rem;
 	}
 
-	.brand{
+	/*.brand{
 		font-size: 5rem;
 	}
-  
+  */
   .overlay.menu-open,
   nav.menu-open{
 	  display: flex;
@@ -209,6 +217,10 @@ nav ul li a:hover::after{
 	background-attachment: fixed;
 }
 
+#about h1{
+	color:#A31D34;
+}
+
 .about-info{
 	width:50%;
 	margin-left:20px;
@@ -225,15 +237,19 @@ nav ul li a:hover::after{
 
 #services {
 	background-color: #FBDB14;
-	padding-left: 150px;
+	
 }
 
 #services h1{
+	text-align: center;
+	padding-top: 30px;
 	color:#060505;
+
 }
  .wrapper {
+ 	padding-left: 150px;
  	 text-align: center;
-	 margin: 40px auto;
+	 margin: 0px auto;
 /*	 display: flex;
 	 flex-wrap: wrap;
 	 justify-content: space-around;
@@ -392,29 +408,36 @@ nav ul li a:hover::after{
 
 /*Contact Section*/
 
+#contact{
+	background: #f5f5f5;
+	padding-top: 50px;
+}
+
 .insta{
-	margin-top:80px;
+		 margin-left: 110px;
+	/*margin-top:80px;
 	margin-left:100px;
-	margin-bottom:20px;
+	margin-bottom:20px;*/
 }
 
-.insta h5{
+.insta h1{
 	text-align: center;
+	 font-size: 2.5rem;
+	 color:#A31D34;
 }
-#contact-us {
-	 background: white;
-	 /*margin: 60px auto 120px;*/
 
+
+#contact-us {
+	 /*margin: 60px auto 120px;*/
 	 text-align: center;
-	 padding: 50px 0 110px;
-	 width: 80%;
+	 width: 100%;
 	 max-width: 1100px;
 }
 #contact-us h1 {
+	color:#A31D34;
 	 margin-bottom: 40px;
-	 font-size: 4em;
+	 font-size: 2.5rem;
 	 text-transform: uppercase;
-	 font-family: 'Lato', sans-serif;
 	 font-weight: 100;
 }
  form {
@@ -422,19 +445,21 @@ nav ul li a:hover::after{
 	 margin: 0 auto;
 }
  form .field {
+
 	 width: 100%;
 	 position: relative;
-	 margin-bottom: 15px;
+	 margin-bottom: 48px;
 }
  form .field label {
 	 text-transform: uppercase;
 	 position: absolute;
 	 top: 0;
 	 left: 0;
-	 background: #313a3d;
+	 background: #060505;
+	 color:#FBDB14;
 	 width: 100%;
 	 padding: 18px 0;
-	 font-size: 1.45em;
+	 font-size: 1.2em;
 	 letter-spacing: 0.075em;
 	 -webkit-transition: all 333ms ease-in-out;
 	 -moz-transition: all 333ms ease-in-out;
@@ -443,14 +468,13 @@ nav ul li a:hover::after{
 	 transition: all 333ms ease-in-out;
 }
  form .field label + span {
-	 font-family: 'SSStandard';
 	 opacity: 0;
 	 color: white;
 	 display: block;
 	 position: absolute;
 	 top: 12px;
 	 left: 7%;
-	 font-size: 2.5em;
+	 font-size: 2.2em;
 	 text-shadow: 1px 2px 0 #cd6302;
 	 -webkit-transition: all 333ms ease-in-out;
 	 -moz-transition: all 333ms ease-in-out;
@@ -466,7 +490,7 @@ nav ul li a:hover::after{
 	 padding: 18px 0;
 	 padding-left: 19.5%;
 	 color: #313a3d;
-	 font-size: 1.4em;
+	 font-size: 1.2em;
 	 letter-spacing: 0.05em;
 	 text-transform: uppercase;
 }
@@ -505,6 +529,7 @@ height:100px;
 	 color: white;
 }
  form input[type="submit"] {
+ 	width: 100%;
 	 background: #FBDB14;
 	 color:#313a3d;
 	 -webkit-appearance: none;
@@ -512,9 +537,8 @@ height:100px;
 	 text-transform: uppercase;
 	 position: relative;
 	 padding: 13px 50px;
-	 font-size: 1.4em;
+	 font-size: 1.2em;
 	 letter-spacing: 0.1em;
-	 font-family: 'Lato', sans-serif;
 	 font-weight: 300;
 	 -webkit-transition: all 333ms ease-in-out;
 	 -moz-transition: all 333ms ease-in-out;
@@ -528,7 +552,7 @@ height:100px;
 }
  form input[type="submit"]:focus {
 	 outline: none;
-	 background: #cd6302;
+	 background: #000;
 }
 
 
